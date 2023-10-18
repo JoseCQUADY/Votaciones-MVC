@@ -4,6 +4,7 @@ import org.jfree.chart.ChartPanel;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
+import java.util.logging.Logger;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.CategoryLabelPositions;
@@ -17,6 +18,7 @@ public class BarChartView {
     private JFrame frame;
     private ChartPanel chartPanel;
     private DefaultCategoryDataset dataset;
+    private static final Logger logger = Test.Main.logger;
 
     public BarChartView() {
         frame = new JFrame("Gráfico de Barras");
@@ -31,6 +33,8 @@ public class BarChartView {
 
         frame.pack();
         frame.setVisible(true);
+        
+        logger.info("Desde BarChartView: BarChartView.");
     }
 
     public void updateChart(String[]productNames, int[] votes) {
@@ -39,6 +43,7 @@ public class BarChartView {
         for (int i = 0; i < productNames.length; i++) {
             dataset.setValue(votes[i], "Votos", productNames[i]);
         }
+        logger.info("Desde BarChartView: updateChart.");
     }
 
     private JFreeChart createBarChart(DefaultCategoryDataset dataset) {
@@ -56,10 +61,12 @@ public class BarChartView {
         plot.setRenderer(renderer);
         plot.getDomainAxis().setCategoryLabelPositions(CategoryLabelPositions.UP_45);
 
+        logger.info("Desde BarChartView: createBarChart.");
         return barChart;
     }
 
     public void closeWindow() {
+        logger.info("Desde BarChartView: closeWindow.");
         frame.dispose();
     }
 }

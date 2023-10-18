@@ -3,8 +3,10 @@ package View;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.util.logging.Logger;
 
 public class SetProductNamesView {
+    private static final Logger logger = Test.Main.logger;
     private JFrame frame;
     private JLabel[] productLabels;
     private JTextField textField1;
@@ -40,24 +42,35 @@ public class SetProductNamesView {
         frame.add(panel);
         frame.pack();
         
+        logger.info("Desde SetProductNamesView: SetProductNamesView.");
     }
     public void saveNamesButtonListener(ActionListener listener){
             saveButton.addActionListener(listener);
+            logger.info("Desde SetProductNamesView: saveNamesButtonListener.");
+    }
+    public void closeWindow() {
+        frame.dispose();
+        logger.info("Desde SetProductNamesView: closeWindow.");
     }
 
         public JFrame getFrame() {
+            logger.info("Desde SetProductNamesView: getFrame.");
             return frame;
+            
         }
 
         public JTextField getTextField1() {
+            logger.info("Desde SetProductNamesView: getTextField1.");
         return textField1;
         }
 
         public JTextField getTextField2() {
+            logger.info("Desde SetProductNamesView: getTextField2.");
             return textField2;
         }
 
         public JTextField getTextField3() {
+            logger.info("Desde SetProductNamesView: getTextField3.");
             return textField3;
         }
     }

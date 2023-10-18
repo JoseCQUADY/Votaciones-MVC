@@ -10,11 +10,14 @@ import org.jfree.data.general.DefaultPieDataset;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class PieChartView {
     private JFrame frame;
     private ChartPanel chartPanel;
     private DefaultPieDataset dataset;
+    private static final Logger logger = Test.Main.logger;
+
 
     public PieChartView() {
         frame = new JFrame("Gráfico de Pastel");
@@ -29,6 +32,8 @@ public class PieChartView {
 
         frame.pack();
         frame.setVisible(true);
+        
+        logger.info("Desde PieChartView: PieChartView.");
     }
 
     public void updateChart(String[] productNames, int[] votes) {
@@ -37,16 +42,19 @@ public class PieChartView {
         for (int i = 0; i < productNames.length; i++) {
             dataset.setValue(productNames[i], votes[i]);
         }
+        logger.info("Desde PieChartView: updateChart.");
     }
 
     private JFreeChart createPieChart(DefaultPieDataset dataset) {
         JFreeChart pieChart = ChartFactory.createPieChart(
                 "Resultados de Votación", dataset, true, true, false);
 
+        logger.info("Desde PieChartView: createPieChart.");
         return pieChart;
     }
 
     public void closeWindow() {
         frame.dispose();
+        logger.info("Desde PieChartView: closeWindow.");
     }
 }

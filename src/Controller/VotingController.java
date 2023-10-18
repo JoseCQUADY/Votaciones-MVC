@@ -2,12 +2,9 @@ package Controller;
 
 import Model.*;
 import View.*;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 public class VotingController {
 
@@ -15,33 +12,21 @@ public class VotingController {
     private VotingView votingView;
     private BarChartView barChartView;
     private PieChartView pieChartView;
-    private SetProductNamesView setProductNamesView;
+    
+    private static final Logger logger = Test.Main.logger;
 
-    public VotingController(DaoProducts daoProduct, VotingView votingView, BarChartView barChartView, PieChartView pieChartView,SetProductNamesView setProductNamesView) {
+    public VotingController(DaoProducts daoProduct, VotingView votingView, BarChartView barChartView, PieChartView pieChartView) {
         this.votingView = votingView;
         this.barChartView = barChartView;
         this.pieChartView = pieChartView;
         this.daoProduct = daoProduct;
-        this.setProductNamesView = setProductNamesView;
-        
-        try{
+        try {
             daoProduct.loadProductsFromFile();
-            
-            //boolean voteDataComplete = daoProduct.getProductNames()!=null;
-            //if(voteDataComplete == false){
-                setProductNamesView.getFrame().setVisible(true);
-                setProductNamesView.saveNamesButtonListener(e->{
-                    try{
-                        saveProductNames();
-                    }catch(IOException ex){
-                        ex.getStackTrace();
-                    }
-                }); 
-            //}
             daoProduct.loadVotesFromFile();
-            }catch(IOException ex){
-            ex.getStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
         
         votingView.setLabel(daoProduct.getProductNames());
         votingView.updateResults(daoProduct.getProductVotes());
@@ -59,7 +44,8 @@ public class VotingController {
                 }
             }, i);
         }
-
+        
+        logger.info("Desde VotingController: VotingController.");
     }
 
     private void vote(int productIndex) throws IOException {
@@ -71,21 +57,8 @@ public class VotingController {
 
         // Guardar la fecha y hora en un archivo
         daoProduct.saveVoteTimestamp(productIndex);
+        
+        logger.info("Desde VotingController: vote.");
     }
-    private void saveProductNames()throws IOException{
-        try {
-            String product1 = setProductNamesView.getTextField1().getText();
-            String product2 = setProductNamesView.getTextField2().getText();
-            String product3 = setProductNamesView.getTextField3().getText();
-            
-            BufferedWriter writer = new BufferedWriter(new FileWriter("productos.txt"));
-            writer.write(product1 + "\n");
-            writer.write(product2 + "\n");
-            writer.write(product3 + "\n");
-            JOptionPane.showMessageDialog(setProductNamesView.getFrame(), "Datos guardados exitosamente.");
-            writer.close();
-        } catch (IOException ex) {
-            Logger.getLogger(VotingController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+
 }

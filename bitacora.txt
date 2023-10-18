@@ -1,0 +1,86 @@
+oct. 18, 2023 1:00:23 P. M. Model.Product <init>
+INFO: Desde Product: Product.
+oct. 18, 2023 1:00:23 P. M. Model.Product setProductName
+INFO: Desde Product: setProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product <init>
+INFO: Desde Product: Product.
+oct. 18, 2023 1:00:23 P. M. Model.Product setProductName
+INFO: Desde Product: setProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product <init>
+INFO: Desde Product: Product.
+oct. 18, 2023 1:00:23 P. M. Model.Product setProductName
+INFO: Desde Product: setProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.DaoProducts fileExist
+INFO: Desde DaoProducts: fileExist.
+oct. 18, 2023 1:00:23 P. M. View.VotingView <init>
+INFO: Desde VotingView: VotingView.
+oct. 18, 2023 1:00:23 P. M. View.BarChartView createBarChart
+INFO: Desde BarChartView: createBarChart.
+oct. 18, 2023 1:00:23 P. M. View.BarChartView <init>
+INFO: Desde BarChartView: BarChartView.
+oct. 18, 2023 1:00:23 P. M. View.PieChartView createPieChart
+INFO: Desde PieChartView: createPieChart.
+oct. 18, 2023 1:00:23 P. M. View.PieChartView <init>
+INFO: Desde PieChartView: PieChartView.
+oct. 18, 2023 1:00:23 P. M. Model.DaoProducts loadProductsFromFile
+INFO: Desde DaoProducts: loadProductsFromFile.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.DaoProducts loadVotesFromFile
+INFO: Desde DaoProducts: loadVotesFromFile.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.DaoProducts getProductNames
+INFO: Desde DaoProducts: getProductNames.
+oct. 18, 2023 1:00:23 P. M. View.VotingView setLabel
+INFO: Desde VotingView: setLabel.
+oct. 18, 2023 1:00:23 P. M. Model.DaoProducts getProductVotes
+INFO: Desde DaoProducts: getProductVotes.
+oct. 18, 2023 1:00:23 P. M. View.VotingView updateResults
+INFO: Desde VotingView: updateResults.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.DaoProducts getProductNames
+INFO: Desde DaoProducts: getProductNames.
+oct. 18, 2023 1:00:23 P. M. Model.DaoProducts getProductVotes
+INFO: Desde DaoProducts: getProductVotes.
+oct. 18, 2023 1:00:23 P. M. View.BarChartView updateChart
+INFO: Desde BarChartView: updateChart.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.Product getProductName
+INFO: Desde Product: getProductName.
+oct. 18, 2023 1:00:23 P. M. Model.DaoProducts getProductNames
+INFO: Desde DaoProducts: getProductNames.
+oct. 18, 2023 1:00:23 P. M. Model.DaoProducts getProductVotes
+INFO: Desde DaoProducts: getProductVotes.
+oct. 18, 2023 1:00:23 P. M. View.PieChartView updateChart
+INFO: Desde PieChartView: updateChart.
+oct. 18, 2023 1:00:23 P. M. View.VotingView addVoteButtonListener
+INFO: Desde VotingView: addVoteButtonListener.
+oct. 18, 2023 1:00:23 P. M. View.VotingView addVoteButtonListener
+INFO: Desde VotingView: addVoteButtonListener.
+oct. 18, 2023 1:00:23 P. M. View.VotingView addVoteButtonListener
+INFO: Desde VotingView: addVoteButtonListener.
+oct. 18, 2023 1:00:23 P. M. Controller.VotingController <init>
+INFO: Desde VotingController: VotingController.
