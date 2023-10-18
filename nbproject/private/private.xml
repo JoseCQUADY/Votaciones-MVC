@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/joeyc_/OneDrive/Escritorio/MVC_Votaciones/src/Main.java</file>
-            <file>file:/C:/Users/joeyc_/OneDrive/Escritorio/MVC_Votaciones/src/VotingController.java</file>
-            <file>file:/C:/Users/joeyc_/OneDrive/Escritorio/MVC_Votaciones/src/VotingModel.java</file>
-            <file>file:/C:/Users/joeyc_/OneDrive/Escritorio/MVC_Votaciones/src/VotingView.java</file>
-            <file>file:/C:/Users/joeyc_/OneDrive/Escritorio/MVC_Votaciones/src/PieChartView.java</file>
-            <file>file:/C:/Users/joeyc_/OneDrive/Escritorio/MVC_Votaciones/src/BarChartView.java</file>
+            <file>file:/C:/Users/joeyc_/OneDrive/Escritorio/MVC_Votaciones/src/View/PieChartView.java</file>
+            <file>file:/C:/Users/joeyc_/OneDrive/Escritorio/MVC_Votaciones/src/Test/Main.java</file>
+            <file>file:/C:/Users/joeyc_/OneDrive/Escritorio/MVC_Votaciones/src/Controller/VotingController.java</file>
+            <file>file:/C:/Users/joeyc_/OneDrive/Escritorio/MVC_Votaciones/src/Model/VotingModel.java</file>
         </group>
     </open-files>
 </project-private>

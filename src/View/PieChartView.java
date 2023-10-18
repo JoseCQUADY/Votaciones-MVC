@@ -1,3 +1,6 @@
+
+package View;
+
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
@@ -28,11 +31,11 @@ public class PieChartView {
         frame.setVisible(true);
     }
 
-    public void updateChart(List<String> productNames, int[] votes) {
+    public void updateChart(String[] productNames, int[] votes) {
         dataset.clear();
 
-        for (int i = 0; i < productNames.size(); i++) {
-            dataset.setValue(productNames.get(i), votes[i]);
+        for (int i = 0; i < productNames.length; i++) {
+            dataset.setValue(productNames[i], votes[i]);
         }
     }
 

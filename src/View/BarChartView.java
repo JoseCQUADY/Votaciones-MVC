@@ -1,5 +1,6 @@
-import org.jfree.chart.ChartPanel;
+package View;
 
+import org.jfree.chart.ChartPanel;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
@@ -32,11 +33,11 @@ public class BarChartView {
         frame.setVisible(true);
     }
 
-    public void updateChart(List<String> productNames, int[] votes) {
+    public void updateChart(String[]productNames, int[] votes) {
         dataset.clear();
 
-        for (int i = 0; i < productNames.size(); i++) {
-            dataset.setValue(votes[i], "Votos", productNames.get(i));
+        for (int i = 0; i < productNames.length; i++) {
+            dataset.setValue(votes[i], "Votos", productNames[i]);
         }
     }
 
