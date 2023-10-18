@@ -11,8 +11,8 @@ public class Product {
         this.productVotes = 0;
     }
 
-    public String getProductName() {
-        return productName;
+    public String getProductName() {   
+            return productName;
     }
 
     public void setProductName(String productName) {

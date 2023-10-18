@@ -31,16 +31,20 @@ public class DaoProducts {
 
     public String[] getProductNames() {
         String[] productNames = new String[3];
-
-        for (int i = 0; i < 3; i++) {
-            productNames[i] = products[i].getProductName();
+        
+            for ( int i=0; i < 3; i++) {              
+                productNames[i] = products[i].getProductName();
+            }
+            return productNames;      
         }
-
-        return productNames;
-    }
-
+    
     public int[] getProductVotes() {
-        return votes;
+        if(votes == null){
+           for(int i=0;i<3;i++){
+            votes[i]=0;
+                    } 
+                }
+     return votes;
     }
 
     public void loadProductsFromFile() {
@@ -62,7 +66,7 @@ public class DaoProducts {
             }
             reader.close();
         } catch (IOException e) {
-
+            
         }
     }
 
